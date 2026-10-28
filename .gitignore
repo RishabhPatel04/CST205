@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+cst205env/
+
+# Secrets / environment
+.env
+*.key
+secrets.*
+
+# OS files
+.DS_Store
