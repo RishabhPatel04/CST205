@@ -1,18 +1,11 @@
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
-venv/
-env/
-.venv/
+*.pyc
 cst205env/
-
-# Secrets / environment
+venv/
 .env
 *.key
 secrets.*
-
-# OS files
 .DS_Store
+
+# Generated at runtime by lab16 /random route
+static/images/negative.png

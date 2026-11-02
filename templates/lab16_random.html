@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 16 — Random Negative</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Lab 16 — Random Negative (Task 4)</h1>
+        <p class="text-center">Refresh the page to see a different negative image.</p>
+
+        <!-- Task 4: display the generated negative from the static directory -->
+        <div class="text-center">
+            <img src="{{ url_for('static', filename=filename) }}"
+                 class="img-fluid w-75"
+                 alt="Random negative">
+        </div>
+
+        <p class="text-center mt-4">
+            <a href="{{ url_for('index') }}">Back home</a>
+        </p>
+    </div>
+    {{ bootstrap.load_js() }}
+</body>
+</html>
