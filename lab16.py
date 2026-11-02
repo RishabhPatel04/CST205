@@ -14,7 +14,7 @@ bootstrap = Bootstrap5(app)
 IMAGE_DIR = os.path.join(app.static_folder, 'images')
 
 # Task 4 — load at least three images into a list of Pillow Image objects.
-image_files = ['fire.png', 'flower.png', 'collage.png']
+image_files = ['dog.png', 'fire.png', 'flower.png', 'collage.png']
 images = [Image.open(os.path.join(IMAGE_DIR, name)) for name in image_files]
 
 
