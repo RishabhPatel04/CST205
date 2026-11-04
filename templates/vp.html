@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 17 — Playlist</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">My Playlist</h1>
+
+        {% if playlist %}
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Song Title</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task 3: display the song title plus the additional info. -->
+                {% for song in playlist %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ song.song_title }}</td>
+                    <td>{{ song.artist }}</td>
+                    <td>{{ song.genre }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="text-center mt-4">Your playlist is empty. Add a song!</p>
+        {% endif %}
+
+        <p class="text-center mt-4">
+            <a href="{{ url_for('index') }}">Add another song</a>
+        </p>
+    </div>
+    {{ bootstrap.load_js() }}
+</body>
+</html>

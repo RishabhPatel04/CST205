@@ -9,3 +9,6 @@ secrets.*
 
 # Generated at runtime by lab16 /random route
 static/images/negative.png
+
+# Generated at runtime by lab17 pickle persistence
+playlist.pkl
